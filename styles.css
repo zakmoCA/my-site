@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+:root{
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #5a5a5a;
+  --link: #111111;
+  --link-hover: #000000;
+  --content-width: 760px;
+  --side-pad: clamp(16px, 5vw, 64px);
+  --row-gap: clamp(28px, 6vw, 56px);
+}
+
+html { background: var(--bg); color: var(--text); }
+
+/* ---- Nav ---- */
+.site-nav{
+  padding-block: 14px;
+  margin: 50px;
+}
+.nav-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.brand{
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text);
+}
+.nav-links{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a{
+  color: var(--muted);
+  text-decoration: none;
+}
+.nav-links a:hover,
+.nav-links a:focus{ color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
+
+
+body{
+  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.6;
+  font-size: 18x;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Layout ---- */
+.site-header,
+.posts{
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding-left: var(--side-pad);
+  padding-right: var(--side-pad);
+}
+
+.site-header{
+  padding-top: clamp(32px, 8vh, 96px);
+  padding-bottom: clamp(8px, 2vh, 16px);
+}
+
+/* ---- Typography ---- */
+h1{
+  font-size: clamp(32px, 5.2vw, 48px);
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.tagline{
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(16px, 2.4vw, 20px);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.tagline-body{
+  font-size: 18px;
+}
+
+.posts{
+  padding-top: clamp(8px, 2vh, 16px);
+  padding-bottom: clamp(48px, 10vh, 128px);
+}
+
+.post{
+  margin-top: var(--row-gap);
+}
+
+.post h2{
+  font-size: clamp(20px, 3.2vw, 26px);
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: none;
+}
+
+.post .excerpt{
+  margin: 0;
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+a{
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover,
+a:focus{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: var(--link-hover);
+  outline: none;
+}
+
+a:focus-visible{
+  outline: 2px dashed #888;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px){
+  body { font-size: 17px; }
+}
