@@ -1,0 +1,13 @@
+/index.html            /                             308
+
+/about/index.html      /about/                       308
+/writing/index.html    /writing/                     308
+/coding/index.html     /coding/                      308
+/reading/index.html    /reading/                     308
+
+/*/index.html          /:splat/                      308
+
+/about                 /about/                       308
+/writing               /writing/                     308
+/coding                /coding/                      308
+/reading               /reading/                     308

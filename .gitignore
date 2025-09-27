@@ -1,2 +1,25 @@
-.history
-.vscode
+.history/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Wrangler local state & caches
+.wrangler/
+node_modules/.cache/
+node_modules/.mf/
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+.env
+.env.*
+.dev.vars
+
+dist/
+build/
+.tmp/
+.cache/
