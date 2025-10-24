@@ -1,82 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <title>xyzak.blog</title>
-    
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Minimal navbar -->
-    <nav class="site-nav" aria-label="primary">
-      <div class="nav-inner">
-        <a class="brand" href="/">xyzak.blog</a>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>xyzak.blog</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Minimal navbar -->
+  <nav class="site-nav" aria-label="primary">
+    <div class="nav-inner">
+      <a class="brand" href="/">zak.blog</a>
+
+      <!-- hamburger menu -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+      <label class="hamburger" for="menu-toggle" aria-controls="nav-menu" aria-label="toggle menu">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-line"></span>
+        </span>
+        <span class="visually-hidden">menu</span>
+      </label>
+
+      <div class="nav-menu" id="nav-menu">
         <ul class="nav-links">
-          <li><a href="/">home</a></li>
-          <li><a href="/about/">about</a></li>
-          <li><a href="/writing/">writing</a></li>
-          <li><a href="/coding/">coding</a></li>
-          <li><a href="/reading/">reading</a></li>
+          <li><a href="/" aria-current="page">home</a></li>
+          <li><a href="/about">about</a></li>
+          <li><a href="/reading">reading</a></li>
+          <li><a href="/writing">writing</a></li>
+          <li><a href="/coding">coding</a></li>
         </ul>
       </div>
-    </nav>
-    <header class="site-header">
-      <h1>hi, and welcome 👋</h1>
-      <p class="tagline">xyzak.blog is my personal site on this little</p>
-      <p class="tagline">corner of the internet. its goal is in sharing.</p><br>
-      <p class="tagline-body">sharing interesting things i create. sharing</p>
-      <p class="tagline-body">interesting things i consume. articles, papers, </p>
-      <p class="tagline-body">code projects, essays.</p><br>
-      <p class="tagline-body"><strong>welcome.</strong></p>
-      <hr>
-    </header>
+    </div>
+  </nav>
 
-    <main class="posts">
-      <article class="post">
-        <h2><a href="#">essay title</a></h2>
-        <p class="excerpt">
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga velit rerum ut illo eos saepe iure quos
-        </p>
-      </article>
+  <header class="site-header">
+    <h1>hi, and welcome 👋</h1>
+    <p class="tagline">xyzak.blog is my personal site on this little</p>
+    <p class="tagline">corner of the internet. its goal is in sharing.</p>
+    <br />
+    <p class="tagline-body">sharing interesting things i create. sharing</p>
+    <p class="tagline-body">
+      interesting things i consume. articles, papers,
+    </p>
+    <p class="tagline-body">code projects, essays.</p>
+    <br />
+    <p class="tagline-body"><strong>welcome.</strong></p>
+    <hr />
+  </header>
 
-      <article class="post">
-        <h2><a href="#">essay title</a></h2>
-        <p class="excerpt">
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga velit rerum ut illo eos saepe iure quos
-        </p>
-      </article>
+  <main class="posts">
+    <article class="post">
+      <h2><a href="#"></a></h2>
+      <p class="excerpt"></p>
+    </article>
+  </main>
+</body>
 
-      <article class="post">
-        <h2><a href="#">essay title</a></h2>
-        <p class="excerpt">
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga velit rerum ut illo eos saepe iure quos
-        </p>
-      </article>
-
-      <article class="post">
-        <h2><a href="#">essay title</a></h2>
-        <p class="excerpt">
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga velit rerum ut illo eos saepe iure quos
-        </p>
-      </article>
-
-      <article class="post">
-        <h2><a href="#">essay title</a></h2>
-        <p class="excerpt">
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga velit rerum ut illo eos saepe iure quos
-        </p>
-      </article>
-
-      <article class="post">
-        <h2><a href="#">essay title</a></h2>
-        <p class="excerpt">
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga velit rerum ut illo eos saepe iure quos
-        </p>
-      </article>
-    </main>
-  </body>
 </html>

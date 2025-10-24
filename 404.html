@@ -1,23 +1,38 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>404 · xyzak.blog</title>
-  
+
   <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
   <nav class="site-nav" aria-label="primary">
     <div class="nav-inner">
-      <a class="brand" href="/">xyzak.blog</a>
-      <ul class="nav-links">
-        <li><a href="/">home</a></li>
-        <li><a href="/about">about</a></li>
-        <li><a href="/writing">writing</a></li>
-        <li><a href="/coding">coding</a></li>
-        <li><a href="/reading">reading</a></li>
-      </ul>
+      <a class="brand" href="/">zak.blog</a>
+
+      <!-- hamburger menu -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+      <label class="hamburger" for="menu-toggle" aria-controls="nav-menu" aria-label="toggle menu">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-line"></span>
+        </span>
+        <span class="visually-hidden">menu</span>
+      </label>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="/">home</a></li>
+          <li><a href="/about">about</a></li>
+          <li><a href="/reading">reading</a></li>
+          <li><a href="/writing">writing</a></li>
+          <li><a href="/coding">coding</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -27,4 +42,5 @@
     <hr>
   </header>
 </body>
+
 </html>

@@ -13,14 +13,27 @@
   <!-- Minimal navbar -->
   <nav class="site-nav" aria-label="primary">
     <div class="nav-inner">
-      <a class="brand" href="/">xyzak.blog</a>
-      <ul class="nav-links">
-        <li><a href="/">home</a></li>
-        <li><a href="/about" aria-current="page">about</a></li>
-        <li><a href="/writing">writing</a></li>
-        <li><a href="/coding">coding</a></li>
-        <li><a href="/reading">reading</a></li>
-      </ul>
+      <a class="brand" href="/">zak.blog</a>
+
+      <!-- hamburger menu -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+      <label class="hamburger" for="menu-toggle" aria-controls="nav-menu" aria-label="toggle menu">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-line"></span>
+        </span>
+        <span class="visually-hidden">menu</span>
+      </label>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="/">home</a></li>
+          <li><a href="/about" aria-current="page">about</a></li>
+          <li><a href="/reading">reading</a></li>
+          <li><a href="/writing">writing</a></li>
+          <li><a href="/coding">coding</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -55,7 +68,7 @@
     </article>
 
   </main>
-  
+
   <script defer src="/js/reveal_email.js"></script>
 </body>
 

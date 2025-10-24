@@ -1,44 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>xyzak - writing</title>
 
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <!-- Minimal navbar -->
-    <nav class="site-nav" aria-label="primary">
-      <div class="nav-inner">
-        <a class="brand" href="/">xyzak.blog</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>xyzak - writing</title>
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <!-- Minimal navbar -->
+  <nav class="site-nav" aria-label="primary">
+    <div class="nav-inner">
+      <a class="brand" href="/">zak.blog</a>
+
+      <!-- hamburger menu -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+      <label class="hamburger" for="menu-toggle" aria-controls="nav-menu" aria-label="toggle menu">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-line"></span>
+        </span>
+        <span class="visually-hidden">menu</span>
+      </label>
+
+      <div class="nav-menu" id="nav-menu">
         <ul class="nav-links">
           <li><a href="/">home</a></li>
           <li><a href="/about">about</a></li>
+          <li><a href="/reading">reading</a></li>
           <li><a href="/writing" aria-current="page">writing</a></li>
           <li><a href="/coding">coding</a></li>
-          <li><a href="/reading">reading</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <header class="site-header">
-      <h1>writing</h1>
-      <p class="tagline">essays, notes, and incomplete thoughts</p>
-      <p class="tagline-body">a rolling log of things i’m thinking about.</p>
-      <hr>
-    </header>
+  <header class="site-header">
+    <h1>writing</h1>
+    <p class="tagline">essays, notes, and incomplete thoughts</p>
+    <p class="tagline-body">a rolling log of things i’m thinking about.</p>
+    <hr />
+  </header>
 
-    <main class="posts">
-      <article class="post">
-        <h2><a href="https://www.goodreads.com/book/show/57071093-your-brain-s-not-broken">your brains not broken</a></h2>
-        <p class="excerpt">this book was a fascinating narrative take on what is all too often a cold, clinical, and inhuman approach to   
-          approaching the problem of neurodiversity.<br><br>
-          this essay to come will be a summary of the book, and though the books focus is ADHD, i will interpolate my experiences being 
-          in addition diagnosed on the spectrum, referencing any current literature where necessary.
-        </p>
-      </article>
+  <main class="posts">
+    <article class="post">
+      <h2>
+        <a href="https://www.goodreads.com/book/show/57071093-your-brain-s-not-broken">your brains not broken</a>
+      </h2>
+      <p class="excerpt">
+        this book was a fascinating narrative take on what is all too often a
+        cold, clinical, and inhuman approach to the problem of
+        neurodiversity.<br /><br />
+      </p>
+    </article>
+  </main>
+</body>
 
-    </main>
-  </body>
 </html>

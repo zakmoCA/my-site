@@ -1,49 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>xyzak - coding</title>
 
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <!-- Minimal navbar -->
-    <nav class="site-nav" aria-label="primary">
-      <div class="nav-inner">
-        <a class="brand" href="/">xyzak.blog</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>xyzak - coding</title>
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <!-- Minimal navbar -->
+  <nav class="site-nav" aria-label="primary">
+    <div class="nav-inner">
+      <a class="brand" href="/">zak.blog</a>
+
+      <!-- hamburger menu -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+      <label class="hamburger" for="menu-toggle" aria-controls="nav-menu" aria-label="toggle menu">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-line"></span>
+        </span>
+        <span class="visually-hidden">menu</span>
+      </label>
+
+      <div class="nav-menu" id="nav-menu">
         <ul class="nav-links">
           <li><a href="/">home</a></li>
           <li><a href="/about">about</a></li>
+          <li><a href="/reading">reading</a></li>
           <li><a href="/writing">writing</a></li>
           <li><a href="/coding" aria-current="page">coding</a></li>
-          <li><a href="/reading">reading</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <header class="site-header">
-      <h1>coding</h1>
-      <p class="tagline">projects, snippets, and tools</p>
-      <p class="tagline-body">most are tiny; some will keep growing.</p>
-      <hr>
-    </header>
+  <header class="site-header">
+    <h1>coding</h1>
+    <p class="tagline">projects, snippets, and tools</p>
+    <p class="tagline-body">most are tiny; some will keep growing.</p>
+    <hr>
+  </header>
 
-    <main class="posts">
-      <article class="post">
-        <h2><a href="https://github.com/zakmoCA/zarvis" target="_blank">second brain</a></h2>
-        <p class="excerpt">retrieval augmented learning, my personal data. a friendly cli.</p>
-      </article>
+  <main class="posts">
+    <article class="post">
+      <h2><a href="https://github.com/zakmoCA/zarvis" target="_blank">second brain</a></h2>
+      <p class="excerpt">retrieval augmented learning, my personal data. a friendly cli.</p>
+    </article>
 
-      <article class="post">
-        <h2><a href="https://github.com/zakmoCA/api-gen" target="_blank">let there be boilerplate</a></h2>
-        <p class="excerpt">personal stack, fast, crud. my boilerplate node/express starters framework.</p>
-      </article>
+    <article class="post">
+      <h2><a href="https://github.com/zakmoCA/api-gen" target="_blank">let there be boilerplate</a></h2>
+      <p class="excerpt">personal stack, fast, crud. my boilerplate node/express starters framework.</p>
+    </article>
 
-      <article class="post">
-        <h2><a href="https://github.com/zakmoCA/my-FBCs" target="_blank">blood counts, me too.</a></h2>
-        <p class="excerpt">python scripts ingesting my full blood count reports as txt files, for data analysis and visualisation.</p>
-      </article>
-    </main>
-  </body>
+    <article class="post">
+      <h2><a href="https://github.com/zakmoCA/my-FBCs" target="_blank">blood counts, me too.</a></h2>
+      <p class="excerpt">python scripts ingesting my full blood count reports as txt files, for data analysis and
+        visualisation.</p>
+    </article>
+  </main>
+</body>
+
 </html>

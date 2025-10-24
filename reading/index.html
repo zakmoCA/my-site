@@ -1,46 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>xyzak - reading</title>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>xyzak - reading</title>
 
 
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <!-- Minimal navbar -->
-    <nav class="site-nav" aria-label="primary">
-      <div class="nav-inner">
-        <a class="brand" href="/">xyzak.blog</a>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <!-- Minimal navbar -->
+  <nav class="site-nav" aria-label="primary">
+    <div class="nav-inner">
+      <a class="brand" href="/">zak.blog</a>
+
+      <!-- hamburger menu -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+      <label class="hamburger" for="menu-toggle" aria-controls="nav-menu" aria-label="toggle menu">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-line"></span>
+        </span>
+        <span class="visually-hidden">menu</span>
+      </label>
+
+      <div class="nav-menu" id="nav-menu">
         <ul class="nav-links">
           <li><a href="/">home</a></li>
           <li><a href="/about">about</a></li>
-          <li><a href="/writing">writing</a></li>
-          <li><a href="/coding">coding</a></li>
           <li><a href="/reading" aria-current="page">reading</a></li>
+          <li><a href="/writing" aria-current="page">writing</a></li>
+          <li><a href="/coding">coding</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <header class="site-header">
-      <h1>reading</h1>
-      <p class="tagline">books, papers, and notes</p>
-      <p class="tagline-body">a rolling list with one-line summaries.</p>
-      <p class="tagline-body">big reads get more lines, no particular schedule.</p>
-      <hr>
-    </header>
+  <header class="site-header">
+    <h1>reading</h1>
+    <p class="tagline">books, papers, and notes</p>
+    <p class="tagline-body">a rolling list with one-line summaries.</p>
+    <p class="tagline-body">big reads get more lines, no particular schedule.</p>
+    <hr>
+  </header>
 
-    <main class="posts">
-      <article class="post">
-        <h2><a href="https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive" target="_blank">Matt Haig on staying alive</a></h2>
-        <p class="excerpt"> currently reading.</p>
-      </article>
+  <main class="posts">
+    <article class="post">
+      <h2><a href="https://www.goodreads.com/book/show/34746473-why-liberalism-failed" target="_blank">looks like the
+          end of the road</a></h2>
+      <p class="excerpt">seems like its finally the end, its over—just not in the way fukuyama would have imagined.</p>
+    </article>
 
-      <article class="post">
-        <h2><a href="https://www.goodreads.com/book/show/51710349-the-weirdest-people-in-the-world" target="_blank">the weirdest people in the world</a></h2>
-        <p class="excerpt">the unique peculiariaties of the west compared to the rest of the world, where this came from and just how much it has contributed to its success.</p>
-      </article>
-    </main>
-  </body>
+    <article class="post">
+      <h2><a href="https://www.goodreads.com/book/show/22514020-neurotribes" target="_blank">neurotribes</a></h2>
+      <p class="excerpt">a history of autism.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive" target="_blank">Matt Haig on
+          staying alive</a></h2>
+      <p class="excerpt"> currently reading.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="https://www.goodreads.com/book/show/51710349-the-weirdest-people-in-the-world" target="_blank">the
+          weirdest people in the world</a></h2>
+      <p class="excerpt">the unique peculiariaties of the west compared to the rest of the world, where this came from
+        and just how much it has contributed to its success.</p>
+    </article>
+  </main>
+</body>
+
 </html>
